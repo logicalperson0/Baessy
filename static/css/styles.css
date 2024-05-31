@@ -1,0 +1,81 @@
+body {
+    background: url('../images/Presentation1.gif') repeat center center fixed;
+    background-size: cover;
+    font-family: Arial, sans-serif;
+    color: #D8DEE9;
+    margin: 0;
+}
+
+header {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px 0;
+    text-align: center;
+}
+
+header nav a {
+    color: #D8DEE9;
+    margin: 0 15px;
+    text-decoration: none;
+}
+
+.content {
+    text-align: center;
+    margin-top: 100px;
+}
+
+.dashboard-container h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.auth-options .button {
+    background-color: #5E81AC;
+    color: #D8DEE9;
+    border: none;
+    padding: 15px 30px;
+    text-decoration: none;
+    font-size: 1em;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 0 10px;
+}
+
+.auth-options .button:hover {
+    background-color: #81A1C1;
+}
+
+.categories, .reviews {
+    margin: 40px 0;
+}
+
+.form-container {
+    width: 300px;
+    margin: 100px auto;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    border: 2px solid #5E81AC;
+}
+
+.form-container h1 {
+    text-align: center;
+}
+
+input[type="text"], input[type="password"], input[type="email"], input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #5E81AC;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+input[type="submit"] {
+    background-color: #5E81AC;
+    color: #D8DEE9;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #81A1C1;
+}

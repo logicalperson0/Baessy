@@ -1,0 +1,35 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="form-container">
+    <h1>Sign In</h1>
+    <form onsubmit="signIn(event)">
+        <input type="text" name="username" placeholder="Username or Email" required>
+        <input type="password" name="password" placeholder="Password" required>
+        <input type="submit" value="Sign In">
+    </form>
+</div>
+<script>
+    async function signIn(event) {
+        event.preventDefault();
+        const username = document.querySelector('input[name="username"]').value;
+        const password = document.querySelector('input[name="password"]').value;
+
+        const response = await fetch('http://localhost:3000/signIn', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify({ username, password })
+        });
+
+        const data = await response.json();
+        if (response.ok) {
+            alert('Sign In successful!');
+            window.location.href = 'dashboard';
+        } else {
+            alert(data.message || 'SignIn failed!');
+        }
+    }
+</script>
+{% endblock %}
