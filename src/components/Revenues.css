@@ -1,0 +1,25 @@
+.revenues-container {
+    margin: 20px;
+  }
+  
+  .revenues-table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .revenues-table th,
+  .revenues-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+  }
+  
+  .revenues-table th {
+    background-color: #5cb85c; 
+    color: #fff;
+    text-align: left;
+  }
+  
+  .revenues-table tr:nth-child(even) {
+    background-color: #f2f2f2;
+  }
+  

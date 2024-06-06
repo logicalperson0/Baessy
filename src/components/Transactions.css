@@ -1,0 +1,25 @@
+.transactions-container {
+    margin: 20px;
+  }
+  
+  .transactions-table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .transactions-table th,
+  .transactions-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+  }
+  
+  .transactions-table th {
+    background-color: #5cb85c;
+    color: #fff;
+    text-align: left;
+  }
+  
+  .transactions-table tr:nth-child(even) {
+    background-color: #f2f2f2;
+  }
+  

@@ -1,0 +1,50 @@
+.auth-form {
+  width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #34495e;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.auth-form h2 {
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+.auth-form label {
+  color: #fff;
+}
+
+.auth-form input[type="email"],
+.auth-form input[type="text"],
+.auth-form input[type="password"] {
+  background-color: #2c3e50;
+  color: #fff;
+  border: none;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 4px;
+}
+
+.auth-form input[type="email"]:hover,
+.auth-form input[type="text"]:hover,
+.auth-form input[type="password"]:hover {
+  background-color: #34495e;
+}
+
+.auth-form button {
+  background-color: #2980b9;
+  border: none;
+  padding: 10px 20px;
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 0.3s, box-shadow 0.3s;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+.auth-form button:hover {
+  background-color: #3498db;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
